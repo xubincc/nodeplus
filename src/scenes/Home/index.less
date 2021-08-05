@@ -1,0 +1,41 @@
+.wapper {
+  width: 100%;
+  min-height: 100vh;
+}
+.mobile_wrapper {
+  display: none;
+}
+.pc_wrapper {
+  display: block;
+}
+
+.home_wrapper .ant-layout-content {
+  overflow: hidden;
+}
+
+@media (max-width: 768px) {
+  .pc_wrapper {
+    display: none;
+  }
+
+  .home_wrapper .ant-layout-content {
+    margin-top: -74px;
+
+    overflow: hidden;
+  }
+  .title_line {
+    display: block;
+    width: 3px;
+    height: 23px;
+    background-color: #007bff;
+    margin-right: 6px;
+    position: relative;
+  }
+  .mobile_wrapper {
+    display: block;
+  }
+
+  .ant-modal-body {
+    max-width: 100%;
+  }
+}

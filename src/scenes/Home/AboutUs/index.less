@@ -1,0 +1,84 @@
+
+.aboutUs_wrapper {
+  width: 100%;
+  min-height: 649px;
+  padding: 68px 20px;
+  background-color: #fff;
+
+  .aboutUs_container {
+    max-width: 1320px;
+    margin: 0 auto;
+
+    .aboutUsTitle {
+      margin-top: 12px;
+      margin-bottom: 24px;
+      font-size: 48px;
+      color: #222;
+      font-weight: bold;
+      line-height: 84px;
+    }
+
+    .form_content {
+      display: flex;
+
+      .leftArea {
+        flex: 1;
+
+        .descript {
+          max-width: 624px;
+          color: #7D8499;
+          font-size: 24px;
+          margin-bottom: 26px;
+        }
+      }
+
+      .rightArea {
+        flex: 1;
+
+        .aboutUs_bg {
+          width: 500px;
+          height: 500px;
+          background: url("../../../assets/images/aoubtUs_img.png") center center no-repeat;
+          background-size: 100% 100%;
+        }
+      }
+    }
+
+  }
+}
+
+
+@media  (max-width: 768px) { 
+
+  .aboutUs_wrapper{
+    height: auto;
+    padding: 10px 30px 30px;
+    .aboutUs_container .form_content {
+       display: flex;
+       flex-direction: column;
+       font-size: 14px;
+       .aboutUsTitle{
+         font-size: 24px;
+         line-height: 36px;
+         display: flex;
+         align-items: center;
+       }
+       .leftArea{
+         padding: 0;
+         .descript{
+           font-size: 14px;
+         }
+       }
+       .rightArea{
+         padding: 0;
+         .aboutUs_bg{
+           width: 293px;
+           height: 293px;
+           margin: 0 auto;
+         }
+       }
+
+
+     }
+  }
+}

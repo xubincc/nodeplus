@@ -1,0 +1,63 @@
+{
+  "name": "NodePlus",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.3.2",
+    "@testing-library/user-event": "^7.1.2",
+    "animate.css": "^4.1.1",
+    "antd": "^4.0.0",
+    "antd-dayjs-webpack-plugin": "^0.0.8",
+    "axios": "^0.19.2",
+    "babel-plugin-import": "^1.13.0",
+    "customize-cra": "^0.9.1",
+    "http-proxy-middleware": "^2.0.1",
+    "less": "^3.11.1",
+    "less-loader": "^5.0.0",
+    "lodash": "^4.17.15",
+    "react": "^16.13.0",
+    "react-addons-css-transition-group": "^15.6.2",
+    "react-app-rewired": "^2.1.5",
+    "react-countup": "^4.4.0",
+    "react-dom": "^16.13.0",
+    "react-intl": "2.8.0",
+    "react-lazyload": "^2.6.5",
+    "react-prism": "^4.3.2",
+    "react-redux": "^7.2.0",
+    "react-router-dom": "^5.1.2",
+    "react-scripts": "3.4.0",
+    "redux": "^4.0.5",
+    "redux-persist": "5.10.0",
+    "redux-thunk": "^2.3.0"
+  },
+  "scripts": {
+    "start": "react-app-rewired start",
+    "start:prod": "cross-env REACT_APP_ENV=prod react-app-rewired start",
+    "start:test": "cross-env REACT_APP_ENV=test react-app-rewired start",
+    "test": "react-app-rewired test",
+    "build": "cross-env REACT_APP_ENV=prod react-app-rewired build",
+    "build:test": "cross-env REACT_APP_ENV=test react-app-rewired build",
+    "build:analyzer": "cross-env ANALYZER=true react-app-rewired build",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.3",
+    "webpack-bundle-analyzer": "^4.4.2"
+  }
+}

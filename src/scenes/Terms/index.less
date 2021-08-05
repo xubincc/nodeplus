@@ -1,0 +1,78 @@
+.pdfWarp{
+  max-width: 90%;
+  margin: 20px auto;
+}
+.policy_warp{
+  max-width: 1000px;
+  margin: 80px auto 20px;
+  padding: 20px 0;
+  .title{
+    font-size: 48px;
+    line-height: 1;
+    margin: 48px 0;
+    font-weight: 500;
+  }
+  .title_h3{
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 1;
+    margin: 48px 0 24px;
+
+  }
+  .text{
+    line-height: 1.8;
+    font-size: 18px;
+    margin-bottom: 24px;
+  }
+}
+.termsOfUse_warp{
+  .title_h3{
+    margin:40px 0 24px;
+  }
+  .text{
+    line-height: 1.8;
+    margin-bottom: 8px;
+    margin-bottom: 48px;
+  }
+  .list{
+    margin-left: 36px;
+    position: relative;
+    &:before {
+      content: ' ';
+      position: absolute;
+      left: -14px;
+      top: 10px;
+      width: 8px;
+      height: 8px;
+      background-color: #000;
+      border-radius: 4px;
+    }
+  }
+  .end{
+    text-align: right;
+    margin-top: 20px;
+  }
+  .text-bold{
+    font-weight: bold;
+  }
+}
+
+@media  (max-width: 768px) { 
+  .policy_warp,.termsOfUse_warp{
+    max-width: 90%;
+    margin: 80px auto 20px;
+    padding-top: 20px;
+    .title{
+      font-size: 24px;
+    }
+  .title_h3{
+    font-size: 18px;
+    margin:48px 0 24px;
+  }
+  .text{
+    font-size: 14px;
+    line-height: 20px;
+    margin: 24px 0;
+  }
+  }
+}

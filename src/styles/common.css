@@ -1,0 +1,83 @@
+body{
+  min-width: 375px;
+}
+.ant-menu-horizontal{
+  border-bottom: none !important;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.home_wrapper .ant-layout{
+  background-color: #fff;
+}
+.ant-layout-header{
+  background-color: transparent;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+
+@font-face {
+  font-family: 'iconfont';  /* Project id 2675239 */
+  src: url('//at.alicdn.com/t/font_2675239_zdezk68a8a.woff2?t=1626613570661') format('woff2'),
+       url('//at.alicdn.com/t/font_2675239_zdezk68a8a.woff?t=1626613570661') format('woff'),
+       url('//at.alicdn.com/t/font_2675239_zdezk68a8a.ttf?t=1626613570661') format('truetype');
+}
+.App {
+  text-align: center;
+  background-color: #fff;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+body{
+
+  --animate-delay:350ms
+}
+
+.animate__animated.animate__delay-500ms {
+  -webkit-animation-delay: 500ms;
+  animation-delay: 500ms;
+}

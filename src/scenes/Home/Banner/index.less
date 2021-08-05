@@ -1,0 +1,113 @@
+
+
+.banner_wrapper {
+  height: 750px;
+  width: 100%;
+  background: url('../../../assets/images/banner.png') center center no-repeat;
+  background-color: #666;
+  background-size: cover;
+  text-align: center;
+  // position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 48px;
+  line-height: 60px;
+  // align-items: center;
+  .consult_btn {
+    width: 220px;
+    height: 60px;
+    font-size: 24px;
+    border-radius: 14px;
+    margin: 34px auto;
+    margin-top: 40px;
+    background-color: #007BFF;
+    color: #fff;
+  }
+  .second_text{
+    margin-top: 34px;
+    font-size: 36px;
+    line-height: 40px;
+    font-weight: normal;
+  }
+  .banner_en{
+    .second_text{
+
+      color: #666;
+    }
+
+  }
+  .banner_cn{
+    font-size: 60px;
+    line-height: 80px;
+    .second_text{
+      font-size: 60px;
+      line-height: 80px;
+    }
+  }
+}
+
+
+.banner_text {
+  padding-top: 36px;
+  font-size: 56px;
+  line-height: 62px;
+  color: #222222;
+  font-weight: bold;
+  width: 1000px;
+  margin: 0 auto;
+
+  span {
+    word-break: break-word;
+    width: auto;
+    display: block;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    overflow: hidden;
+  }
+}
+
+
+
+@media  (max-width: 768px) { 
+
+  .banner_wrapper{
+    height: 500px;
+    .banner_text{
+      padding-left: 30px;
+      padding-top: 0;
+      margin: 0;
+      max-width: 360px;
+      text-align: left;
+      font-size: 24px;
+      line-height: 32px;
+      font-weight: 700;
+
+      .second_text{
+        font-weight: normal;
+        margin-top: 10px;
+        font-size: 14px;
+        line-height: 18px;
+        color: #666;
+      }
+    }
+    .banner_cn{
+      font-size: 30px;
+      line-height: 38px;
+      .second_text{
+        font-size: 18px;
+        line-height: 24px;
+      }
+    }
+    .consult_btn{
+      font-size: 14px;
+      border-radius: 8px;
+      width: 110px;
+      transition-delay: 2s;
+      height: 46px;
+      margin:25px 0 0 30px;
+      float: left;
+    }
+  }
+
+}
