@@ -1,29 +1,50 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## 部署文档
 
-## Available Scripts
+### 1.安装依赖
 
-In the project directory, you can run:
+```
+  npm install
+```
 
-### `yarn start`
+### 2.打包代码
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+```
+  npm run build // 打包正式环境
+  //  npm run build:test //打包测试环境
+```
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+### 3.部署代码
 
-### `yarn test`
+将build  文件下代码全部拷贝至 web 服务器容器下。
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `yarn build`
+### 4.环境请求地址配置(可选)
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```
+ .env 文件下 
+ 修改 REACT_APP_TEST_BASE_URL 测试环境
+ REACT_APP_PROD_BASE_URL  正式环境
+```
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+### 5.本地调试（可选）
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```
+ npm run start // 本地代理（可跨域）
+ setupProxy 下修改代理地址。
 
+ npm run start:prod 请求正式环境地址
+ npm run start:test 请求测试环境地址
+ 
+```
+
+### 6.部分目录文件 (可选)
+
+```
+/src 所有代码文件
+/src/locales 多语言文件资源
+/src/assets 静态资源
+/src/scenes 页面组件
+/src/services 接口请求
+/src/utils 工具类
+
+```
