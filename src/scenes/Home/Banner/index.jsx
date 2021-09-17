@@ -65,7 +65,7 @@ class Home extends Component {
               type="primary"
               className="consult_btn hvr-float-shadow"
               onClick={() => {
-                this.navigationTo("contact_us");
+                this.navigationTo("contactUs");
               }}
             >
               <FormattedMessage id="banner_btn" />

@@ -164,7 +164,7 @@ class Networks extends Component {
               </div>
 
               <div className="learnMore">
-                <Button className="lm_btn hvr-grow-shadow" type="primary" onClick={()=>{this.navigationTo("contact_us")}}>
+                <Button className="lm_btn hvr-grow-shadow" type="primary" onClick={()=>{this.navigationTo("contactUs")}}>
                   <FormattedMessage id="learn_more" />                  
                 </Button>
               </div>
